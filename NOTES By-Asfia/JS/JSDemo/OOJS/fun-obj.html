@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Object Oriented JavaScript</title>
+	</head>
+	<body>
+		<script>
+		function cat(name,color)
+		{this.name=name,
+		 this.color=color};
+		var c1=new cat('Fulffy','White');
+		cat.prototype.age=3;
+		var c2=new cat('Muffin','Grey');
+		console.log(c1.__proto__);
+		console.log(cat.prototype);
+		console.log(c2.age)//3
+		</script>
+	</body>
+</html>

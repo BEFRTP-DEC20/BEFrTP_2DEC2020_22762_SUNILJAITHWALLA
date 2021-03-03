@@ -1,0 +1,58 @@
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes NAME-YOUR-ANIMATION {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+#box {
+  -webkit-animation: NAME-YOUR-ANIMATION 5s infinite; /* Safari 4+ */
+  -moz-animation:    NAME-YOUR-ANIMATION 5s infinite; /* Fx 5+ */
+  -o-animation:      NAME-YOUR-ANIMATION 5s infinite; /* Opera 12+ */
+  animation:         NAME-YOUR-ANIMATION 5s infinite; /* IE 10+, Fx 29+ */
+}
+
+
+////*******************************//////////////
+
+@keyframes fontbulger {
+  0% {
+    font-size: 10px;
+  }
+  30% {
+    font-size: 15px;
+  }
+  100% {
+    font-size: 12px;
+  }
+}
+
+#box {
+   animation: fontbulger 2s infinite;
+}
+
+
+////****************////
+.box {
+ animation-name: bounce;
+ animation-duration: 4s; /* or: Xms */
+ animation-iteration-count: 10;
+ animation-direction: alternate; /* or: normal */
+ animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+ animation-fill-mode: forwards; /* or: backwards, both, none */
+ animation-delay: 2s; /* or: Xms */
+}
+
+/////////////////////////////
+
+animation: test 1s 2s 3 alternate backwards

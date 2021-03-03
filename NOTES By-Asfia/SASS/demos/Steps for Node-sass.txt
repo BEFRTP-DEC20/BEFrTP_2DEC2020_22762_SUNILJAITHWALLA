@@ -1,0 +1,10 @@
+> npm init
+
+> npm install node-sass
+
+"scripts": { "sass": "node-sass -w scss/ -o css/ --recursive" }, 
+>>> in package.json file
+
+> npm run sass
+
+Ctrl+c >>> to stop the watch

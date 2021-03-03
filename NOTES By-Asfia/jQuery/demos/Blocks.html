@@ -1,0 +1,90 @@
+<html>
+    <head>
+         <style>
+            td{
+                position: relative;
+                height: 150px;
+                width: 160px;
+                background-color: yellowgreen;
+                }
+            .newtd{
+                          background-color: white;
+                          font-style: normal;
+                          font-size: 100px;
+                          text-align: center;
+                          content: "A";
+                          
+            }
+              .newtd::before{
+                content: "A";
+            }  
+            </style>  
+        <script src="./jQueryAjax/Scripts/jquery-1.9.1.js"></script>
+        <script >
+            
+            var values=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+                        "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+            var element;
+
+            $('document').ready(function(){
+
+            
+
+                $('td').click(function(){
+                   
+                    if(!element){
+                       element=$(this);
+                  
+                    $(this).addClass('newtd');
+                        console.log(getChar())
+                    $(this).innerText=getChar();;
+                    }
+                    else{
+                    element.removeClass("newtd");
+                    element=$(this);
+                    $(this).addClass('newtd');
+                    $(this). innerText=getChar();
+                    }
+                });
+            });
+
+            function getChar()
+            {
+               
+                var val=values[Math.floor(Math.random() * (25 - 0 + 1) + 0)];
+                     return val;
+            }
+            
+      </script>
+    </head>
+    <body>
+        <table border=3px>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                       
+        </table>
+    </body>
+</html>

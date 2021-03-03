@@ -1,0 +1,21 @@
+var dwightSalary = (function(mysalary) { 
+    var salary = mysalary; //private
+    
+	function changeBy(amount) //private function
+    { salary += amount; } 
+    
+    return { 
+    raise: function(val) { changeBy(val); },
+    lower: function(val) { changeBy(-val); },
+    currentAmount: function() { return salary; } 
+    }; //return
+    
+})   (50000);
+    
+alert(dwightSalary.currentAmount()); // $60,000
+  dwightSalary.raise(5000); 
+  alert(dwightSalary.currentAmount()); // $65,000 
+  dwightSalary.lower(200);
+ dwightSalary.lower(100); 
+ alert(dwightSalary.currentAmount()); // $55,000 
+ dwightSalary.changeBy(10000) // TypeError: undefined is not a function

@@ -1,0 +1,65 @@
+<html>
+
+<head>
+  <script src="../Scripts/jquery-1.9.1.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.btn').click(function () {
+
+        var friend = { name: '', age: 0 };
+        friend.name=$("input[name='n']").val();
+        friend.age=$("input[name='a']").val();
+        console.log(friend)
+        $.ajax({
+          type: "POST",
+          url: "http://rest.learncode.academy/api/learncode/friends",
+          data: friend,
+          success: function (data) {
+            alert('Added...' + data.name);
+          },
+          error: function () {
+            alert('Error in adding');
+          }
+
+        });
+      });
+
+      $('.btn1').click(function () {
+        $.ajax({
+          complete:function(){},
+          type: "GET",
+          url: "http://rest.learncode.academy/api/learncode/friends",
+          success: function (friends) {
+            console.log(friends);
+            $.each(friends, function (i, friend) {
+              $('.mydiv').append("<br>Name: "+friend.name).append(" Age: "+friend.age);
+            });
+
+          },
+          error: function () {
+            alert('Error in getting');
+          }
+
+        });
+
+
+      });
+    });
+
+  </script>
+</head>
+
+<body>
+
+
+  Name: <input type="text" name="n" />
+  Age: <input type="text" name="a" />
+  <br>
+  <button type="button" class="btn">Add Friend</button>
+<br><br>
+  <button type="button" class="btn1">Show Friends</button>
+  <div class="mydiv"></div>
+</body>
+
+</html>

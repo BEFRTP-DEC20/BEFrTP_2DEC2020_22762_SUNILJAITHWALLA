@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script src="./jquery-3.4.1.min.js"></script>
+        <script src="./jquery.cycle.all.js"></script> 
+        <script>
+        $(document).ready(function() {
+            $('.slideshow').cycle({
+                fx:'zoom', 
+                sync:  false, 
+                delay: -2000,   // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <div class="slideshow">
+        <img src="./images/laptop.jpg " width="200" height="200" >
+        <img src="./images/keyb.jpg" width="200" height="200">
+        <img src="http://malsup.github.com/images/beach3.jpg" >
+        <img src="http://malsup.github.com/images/beach3.jpg" width="200" height="200" >
+        <img src="http://malsup.github.com/images/beach3.jpg" width="200" height="200" >
+    </div>
+    </body>
+</html>

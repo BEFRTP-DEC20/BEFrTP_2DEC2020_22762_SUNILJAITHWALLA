@@ -1,0 +1,97 @@
+{
+  "user": [
+    {
+      "id": "Auto Generate",
+      "name": "Keyur Khant",
+      "email": "kp@cybage.com",
+      "password": "PaSSword",
+      "mobile": "9016243435",
+      "interest": [
+        "cricket",
+        "football",
+        "languages"
+      ],
+      "result": [
+        {
+          "categoryid": "12444",
+          "marks": "24",
+          "timer": "In seconds",
+          "timestamp": "12 DEC 2020"
+        },
+        {
+          "categoryid": "44",
+          "marks": "21",
+          "timer": "In seconds",
+          "timestamp": "15 DEC 2020"
+        }
+      ]
+    },
+    {
+      "id": "User-7052021d-992a-4c86-a723-d54fb39bdbf4",
+      "firstname": "Kushal",
+      "lastname": "Ahuja",
+      "email": "kushal@cybage.com",
+      "password": "asdfasdf",
+      "mob": "9234567890",
+      "securityQuestion": "What is yout favorite animal?",
+      "securityAnswer": "Billi"
+    },
+    {
+      "id": "User-0b04173a-d487-46f3-942d-b100f660da2c",
+      "firstname": "ankitaa",
+      "lastname": "panju",
+      "email": "anki@gmail.com",
+      "password": "qwerqwer",
+      "mob": "8989898989",
+      "securityQuestion": "What is yout favorite animal?",
+      "securityAnswer": "monkey"
+    }
+  ],
+  "category": [
+    {
+      "categoryname": "Cricket",
+      "categoryid": "1234"
+    },
+    {
+      "categoryname": "Cricket",
+      "categoryid": "1234"
+    }
+  ],
+  "questions": [
+    {
+      "categoryid": "",
+      "questionid": "",
+      "question": "Who is PM of India?",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "answer": "a"
+    },
+    {
+      "categoryid": "",
+      "questionid": "",
+      "question": "Who is PM of India?",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "answer": "a",
+      "imgurl": "D:/IMAGE/img.jpg (If Images are there then added dynamically by JS)"
+    }
+  ],
+  "admin": [
+    {
+      "id": "Auto Generate",
+      "name": "Keyur Khant",
+      "email": "kp@cybage.com",
+      "password": "PaSSword",
+      "mobile": "9016243435",
+      "lastLogin": "Timestamp of last login"
+    }
+  ]
+}

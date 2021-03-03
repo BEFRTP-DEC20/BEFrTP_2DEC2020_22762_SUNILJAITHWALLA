@@ -1,0 +1,31 @@
+<html>
+   <head>
+   
+      <script type="text/javascript">
+	  'use strict'
+                    function over() {
+               //document.write ("Mouse Over");
+			   document.getElementById("demo").innerHTML ="Mouse Over";
+            }
+                
+            function out() {
+                document.getElementById("demo").innerHTML ="Mouse Out";
+            }
+            
+			function changecolor()
+			{
+			document.getElementById("demo").style.background="blue";
+			}
+        
+      </script>
+      
+   </head>
+   <body>
+      <p>Bring your mouse inside the division to see the result:</p>
+      
+      <div id="demo" onmouseover="over()" onmouseout="out()" style="background-color:red" onclick="changecolor()">
+         <h2> This is inside the division </h2>
+      </div>
+         
+   </body>
+</html>

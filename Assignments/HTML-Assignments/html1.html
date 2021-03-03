@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<h1>Registration Form</h1>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="htmlass1.css">
+</head>
+<body>
+    <form>
+        Name:<input type="text" size="7" maxlength="7" required><br><br>
+        Phone Number:<input type="tel" maxlength="10" pattern="^[1-9]+[0-9]{9}"><br><br>
+        Email Address:<input type="email" required><br><br>
+        <h3>Payment Details</h3><br>
+        
+        <label for="payment">Using Debit Card/Credit Card:</label>
+        <select id="payment" name="payment">
+        <option value="sbi">SBI</option>
+        <option value="icici">ICICI</option>
+        <option value="citi">CITI</option>
+        <option value="hdfc">HDFC</option> 
+        </select><br><br>
+        Card Number:<input type="number"><br><br>
+        CVV:<input type="number" size="3"><br><br>
+        Expiry Date:<input type="date"><br><br>
+    <input type="submit"><br><br>
+    <h3>Login Details</h3><br>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" maxlength="8" required placeholder="Enter Username" name="uname" required><br><br>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+    <label for="psw"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="psw" required><br><br>
+
+    <button type="submit">Login</button>
+
+
+    </form>
+</body>

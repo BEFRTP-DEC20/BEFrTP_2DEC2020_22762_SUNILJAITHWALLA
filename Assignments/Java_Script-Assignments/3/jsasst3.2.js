@@ -1,0 +1,11 @@
+var str="Cybage Software Pvt Ltd";
+var pos=str.indexOf("A");
+document.write("charecter c is found at"+pos+"<br><br>");
+var node=document.createElement("text");
+var textnode=document.createTextNode("is popularly known as cybage software");
+node.appendChild(textnode);
+document.getElementById("text").appendChild(node);
+var res=str.toLocaleLowerCase();
+var res1=str.toLocaleUpperCase();
+document.write(res+"<br><br>");
+document.write(res1+"<br><br>");

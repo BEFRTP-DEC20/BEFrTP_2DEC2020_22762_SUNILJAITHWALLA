@@ -1,0 +1,85 @@
+.mylabel:after {
+  content: "My Label";
+  color: black;
+}
+
+.mylabel:hover:after {
+  content: "MY LABEL";
+  background-color: rgba(255, 247, 179, 0.993);
+  color: blue;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  border: 1px solid #0a0a0a;
+  grid-column-gap: 10px;
+  height: 500px;
+  padding: 20px;
+  background-color: rgba(255, 247, 179, 0.993);
+}
+
+.left {
+  background-color: #9bdd9b;
+  border: 1px solid #0a0a0a;
+  color: #63dae2;
+}
+
+.right {
+  background-color: #758beb;
+  border: 1px solid #0a0a0a;
+  color: #63dae2;
+  position: relative;
+}
+
+.button {
+  background-color: #3324c0;
+  border: 0;
+  border-radius: 8px;
+  bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1em 2em;
+  position: absolute;
+  right: 8px;
+}
+
+.container2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  border: 1px solid #0a0a0a;
+  grid-column-gap: 10px;
+  height: 500px;
+  padding: 20px;
+  background-color: #1a1a0d;
+}
+
+.left {
+  background-color: #d0ebd0;
+  border: 1px solid #0a0a0a;
+  color: black;
+}
+
+.right {
+  background-color: #ace8f0;
+  border: 1px solid #0a0a0a;
+  color: black;
+  position: relative;
+}
+
+.button {
+  background-color: grey;
+  border: 0;
+  border-radius: 8px;
+  bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1em 2em;
+  position: absolute;
+  right: 8px;
+}
+/*# sourceMappingURL=sassasg3.css.map */

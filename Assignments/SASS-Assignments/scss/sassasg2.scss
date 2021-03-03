@@ -1,0 +1,44 @@
+.button{
+    border-radius: 3px; 
+    padding: 12px 15px 12px 15px; 
+    background-color: #8bc34a; 
+    border: 0; 
+    width:150px; 
+    font-family: "SegoeUI SemiBold"; 
+    font-size: 16px; 
+    color: #FFFFFF
+}
+.primary{
+    @extend .button;
+    background-color: #8bc34a; 
+    color: #FFFFFF; 
+    border: 1px solid #8bc34a; 
+    &:hover{
+    @extend .primary;
+    background-color: #9dce5d; 
+    color: #FFFFFF; 
+    border: 1px solid #9dce5d; 
+}}
+.primarydisabled{
+    @extend .button;
+    background-color: #eeeeee; 
+    color: #999999; 
+    border: 1px solid #eeeeee;
+}
+.secondary{
+    @extend .button;
+    background-color: #FFFFFF; 
+    color: #2095f2; 
+    border: 1px solid #2095f2; 
+    &:hover{
+    @extend .secondary;
+    background-color: #2095f2; 
+    color: #FFFFFF; 
+    border: 1px solid #2095f2; 
+}}
+.secondarydisabled{
+    @extend .button;
+    background-color: #ffffff; 
+    color: #999999; 
+    border: 1px solid #cccccc; 
+}

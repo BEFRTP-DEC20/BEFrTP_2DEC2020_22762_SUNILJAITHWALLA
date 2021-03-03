@@ -1,0 +1,35 @@
+<html>
+    <head>
+            <script src="../Scripts/jquery-1.9.1.min.js"></script>
+        
+            <script>
+
+                $(document).ready(function(){
+                    $('.btn').click(function() {
+      $('.text').text('loading . . .');
+
+      $.ajax({
+           url:"https://api.meetup.com/2/cities",
+        success: function(data) {
+        $('.text').text(JSON.stringify(data));
+    },
+    error: function(){
+        alert('Error in loading...');
+    },
+    dataType: 'jsonp',
+  });
+  
+
+});
+});
+            
+            </script>
+    </head>
+    <body>
+            <button type="button" class="btn">Click me!</button>
+            <p class="text">Replace me!!</p>
+          
+
+    </body>
+
+</html>

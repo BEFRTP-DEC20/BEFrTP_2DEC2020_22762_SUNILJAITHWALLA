@@ -1,0 +1,42 @@
+<!DOCTYPE html>      
+<html lang="en">      
+<head>      
+    <meta charset="utf-8" />      
+</head>      
+<body> 
+
+        <a href="./semantic.html"> Back </a>
+     
+   <b>Meter without value</b>  
+   <meter></meter>  
+  
+   <br/><br/>  
+   <b>Meter with value but without min and max attribute</b>  
+   <meter value="0.8"></meter>  
+  
+   <br/><br/>  
+   <b>Meter with value, min and max attribute</b>  
+   <meter min="0" max="100" value="17"></meter>  
+  
+   <br/><br/>  
+   <b>Meter (when "min <= value < low")</b>  
+   <meter  min="0" max="100" value="17" low="25" high="75"></meter>  
+  
+   <br/><br/>  
+   <b>Meter (when "high < value <= max")</b>  
+   <meter  min="0" max="100" value="80" low="25" high="75"></meter>  
+  
+   <br/><br/>  
+   <b>Meter (when "low <= value <= high")</b>  
+   <meter  min="0" max="100" value="50" low="25" high="75"></meter>  
+  
+   <br/><br/>  
+   <b>Meter with optimum attribute</b>  
+   <meter  min="0" max="100" value="24" low="25" high="75" optimum="80"></meter>  
+  
+   <br/><br/>  
+   <b>Meter with optimum attribute</b>  
+   <meter  min="0" max="100" value="80" low="25" high="75" optimum="20"></meter>  
+  
+</body>      
+</html>    

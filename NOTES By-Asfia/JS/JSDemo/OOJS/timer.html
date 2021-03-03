@@ -1,0 +1,26 @@
+<html>
+<body>
+<p id='timer'>00:00 min</p>
+
+<script>
+var min = 0;
+var second = 0;
+var i=setInterval(function(){
+    second++;
+    if(second > 59){
+        second = 0;
+        min++;
+        if(min>59){
+                       min = 0;
+        }
+    }
+    var timer_time = (min > 9 ? min : '0'+min)+':'+(second > 9 ? second : '0'+second);
+	   document.getElementById('timer').innerHTML=(timer_time+"min");
+    }, 1000);
+
+document.getElementById('stop_timer').click(function(){
+    clearInterval(i);
+});
+</script>
+</body>
+</html>

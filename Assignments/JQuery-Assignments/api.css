@@ -1,0 +1,19 @@
+.div-conatiner {
+    background-color: #eeeeee;
+    margin-left: 55px;
+    margin-bottom:10px; 
+    padding: 5px;
+    width: 300px;
+    height: 250px;
+    border: 1px solid black;
+    float: left;
+    text-align: center
+  }
+
+  .div-conatiner > button{
+    padding: 5px;
+    margin-top: 5px;
+    background-color: rgb(207, 180, 109)
+  }
+  
+

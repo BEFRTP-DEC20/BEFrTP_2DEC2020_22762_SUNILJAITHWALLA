@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>appendTo demo</title>
+  <style>
+  #foo {
+    background: yellow;
+  }
+  </style>
+  <div id="foo">FOO! </div>
+  </head>
+<body>
+    <script src="../lib/jquery-3.5.1.js"></script>
+    <script src="../js/first.js"></script>
+ 
+<span>I have nothing more to say... </span>
+ 
+
+ 
+<script>
+$( "span" ).appendTo( "#foo" );
+</script>
+ 
+</body>
+</html>
+<!--<html>
+    <head>
+        <script src="../lib/jquery-3.5.1.js"></script>
+        <script src="../js/first.js"></script>
+    <title>jquery page</title>
+    </head>
+    <body>
+        <div>
+            hello world!!!!!
+        </div>
+    </body>
+</html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>attributeNotEqual demo</title>
+  <script src="../lib/jquery-3.5.1.js"></script>
+        <script src="../js/first.js"></script>
+</head>
+<body>
+ 
+<div>
+  <input type="radio" name="newsletter" value="Hot Fuzz">
+  <span>name is newsletter</span>
+</div>
+<div>
+  <input type="radio" value="Cold Fusion">
+  <span>no name</span>
+</div>
+<div>
+  <input type="radio" name="accept" value="Evil Plans">
+  <span>name is accept</span>
+</div>
+<script>
+$( "input[name!='newsletter']" ).next().append( "<b>; not newsletter</b>" );
+</script>
+</body>
+</html>-->
+

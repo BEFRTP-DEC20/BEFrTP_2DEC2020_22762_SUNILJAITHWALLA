@@ -1,0 +1,19 @@
+<html>
+<body>
+<script>
+
+'use strict';
+
+var Cat = {
+  name: "Fulffy",//name{first:"Fluffy",last:"Schinder"} still it will change the name to //Scrathy so solution is use Object.freeze(Cat,name);
+  color: "White"
+};
+Object.defineOwnProperty(Cat,'name',{writable:false});
+
+Cat.name="Scracthy";
+
+document.writeln(Object.getOwnPropertyDescriptor(Cat, 'name'));
+
+</script>
+</body>
+</html>

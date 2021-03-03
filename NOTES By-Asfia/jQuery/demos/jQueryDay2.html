@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+        .defualt1{
+            display: none;
+            border: 3px ridge peru;
+        }
+
+        .mystyle{
+            display: block;
+            color: plum;
+            height: 45px;
+            width: 85px;
+        }
+        </style>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $('button').on('click',changeData);
+                $('div').on('click','p',function(){alert('Delegated on..')});
+            });
+
+        function changeData(){
+            $('.defualt1').toggleClass("mystyle");
+        }
+        
+        </script>
+    </head>
+    <body>
+        <button >Click</button>
+        <div class='defualt1'>
+                My Div 1!!!
+            <p>Inside Para</p>
+        </div>
+    </body>
+</html>

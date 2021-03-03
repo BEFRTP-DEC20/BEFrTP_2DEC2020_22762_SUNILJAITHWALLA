@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="./jquery-3.4.1.min.js"></script>
+        <script> 
+         $(document).ready(()=>{
+             $("button").click(myhandler);
+         });
+
+         function myhandler(){
+            
+            var name=$('input[type="text"]').val();
+            var age=$('input[type="number"]').val();
+             var contactNo=$('input[type="tel"]').val();
+            // if(contactNo.length>9){
+            //     $('input[type="tel"]').css("border","3px solid red");
+            //     $('input[type="tel"]').after("<span>Length exceeds 9</span>")
+            //     $("button").attr('disabled',true);
+            // }
+            alert("Details are: "+name+" "+age+" "+contactNo)
+            
+         }
+        </script>
+    </head>
+    <body>
+        
+            Name:   <input type="text"><br/>
+            Age:    <input type="number"><br/>
+            Contact Number: <input type="tel"><br/>
+            <button>Send</button>
+            <input type="reset">
+       
+    </body>
+</html>

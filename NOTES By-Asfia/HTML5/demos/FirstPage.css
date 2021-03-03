@@ -1,0 +1,16 @@
+header{
+    width:100%;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+div{
+    margin:3px;
+    border:3px dashed blue;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    position: relative;
+    left:100px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+<!-- h1 {
+    margin: 40px 50px ;
+	border:2px;
+	border-color:red;
+	border-style:solid;
+	padding:3px;
+}
+
+h2 {
+    margin: 20px 70px 50px 40px;
+} -->
+
+#id1{
+ border: 2px solid red;
+}
+
+#id2{
+ background-color: green;
+ color:pink;
+}
+
+.axyz{
+  color: green;
+  background-color: blue;
+  }
+  
+ .bc{
+  background-color: #ff5722;
+  }
+  
+  
+  
+</style>
+</head>
+<body>
+
+<p class=" bc axyz" >In this example the h1 element has a bottom margin of 50px and the h2 element has a top margin of 20px. Then, the vertical margin between h1 and h2 should have been 70px (50px + 20px). However, due to margin collapse, the actual margin ends up being 50px.</p>
+
+<p class="axyz bc">Heading 1</p>
+<p id="id1 id2">Heading 2</p>
+
+</body>

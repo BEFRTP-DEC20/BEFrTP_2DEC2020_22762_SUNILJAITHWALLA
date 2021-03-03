@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Slector Demo</title>
+        <style>
+            div p{
+                background-color: lightcyan;
+            }
+
+            div > p{
+                background-color: lightcoral;
+            }
+
+            div + p{
+                background-color: blue;
+            }
+
+            div ~ p{
+                background-color: greenyellow;
+            }
+        </style>
+    </head>
+    <div>Inside Div</div>
+    <p> Inside Para1</p>
+    <p> Inside Para2</p>
+    <div>
+        <p>
+            Para in div
+        </p>
+        <section>
+            <p>
+                Para in section
+            </p>
+        </section>
+    </div>
+    <p>Outer para</p>
+</html>

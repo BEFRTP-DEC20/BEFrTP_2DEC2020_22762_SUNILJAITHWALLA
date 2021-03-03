@@ -1,0 +1,26 @@
+Done Reading Config File
+Checking for .NET Framework
+.NET Framework 4.5 onward exists
+Latest ESPlus Software Installed
+ESPlus InstallationFolder Present
+PatchMgmtService Installed
+PatchMgmtService ExePath Correct
+PatchMgmtService Mode Correct And Enabled
+Read Live Files
+XML File copied successfully
+Read XML File
+XML File deleted successfully
+Files Compared
+Files are existing/ There is no mismatch
+Started Running Tool Detector Executor
+Running Tool Detector Executor  started 2/1/2021 10:00:09 AM
+Fininshed Running Tool Detector Executor2/1/2021 10:00:09 AM
+Service Stopped
+PatchMgmtService.exe file present at source:C:\Program Files (x86)\Cybage Software Pvt. Ltd\CybagePCMClient\PatchMgmtService.exe. Creating Service.2/1/2021 10:00:14 AM
+PatchMgmtService Mode Correct And Enabled
+Service  Created Successfully2/1/2021 10:00:14 AM
+Service Created Successfully2/1/2021 10:00:14 AM
+Found Service in List. 2/1/2021 10:00:20 AM
+Attempting to start service. 2/1/2021 10:00:20 AM
+Started Service 2/1/2021 10:00:21 AM
+Cycle Completed

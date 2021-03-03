@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Triangle Canvas Example</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+ 
+    <script>
+	 var canvasElement = document.querySelector("#myCanvas");
+	var context = canvasElement.getContext("2d");
+ 
+	
+	
+	//Smiley
+	context.beginPath();
+    context.arc(75, 75, 50, 0, Math.PI * 2, true); // Outer circle
+    context.moveTo(110, 75);
+    context.arc(75, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+    context.moveTo(65, 65);
+   context.arc(60, 65, 5, 0, Math.PI * 2, true);  // Left eye
+    context.moveTo(95, 65);
+    context.arc(90, 65, 5, 0, Math.PI * 2, true);  // Right eye
+    context.stroke();
+	</script>
+ 
+</body>
+</html>

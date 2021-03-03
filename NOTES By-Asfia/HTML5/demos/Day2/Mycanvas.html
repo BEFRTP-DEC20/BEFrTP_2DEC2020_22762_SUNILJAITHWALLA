@@ -1,0 +1,22 @@
+<html>
+<body>
+		<canvas id="mycan" width='200px' height='200px'>
+		</canvas>
+		
+		<script>
+		var mypen=document.getElementById('mycan').getContext('2d');
+		mypen.fillStyle='grey';
+		mypen.fillRect(50,50,60,60);
+		mypen.strokeStyle='red';
+		mypen.strokeRect(10,10,30,60);
+		mypen.beginPath();
+		mypen.moveTo(75, 50);
+		mypen.lineTo(100, 75);
+		mypen.lineTo(100, 25);
+		//mypen.closePath();
+		//mypen.stroke();
+		mypen.fill();
+		</script>
+		
+</body>
+</html>

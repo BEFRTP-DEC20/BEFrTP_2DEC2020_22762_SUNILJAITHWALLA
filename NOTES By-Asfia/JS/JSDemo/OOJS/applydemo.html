@@ -1,0 +1,24 @@
+var person = {
+    firstName:"John",
+    lastName: "Doe",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+    }
+}
+var myObject = {
+    firstName:"Mary",
+    lastName: "Doe",
+}
+person.fullName.apply(myObject);  // Will return "Mary Doe"
+
+
+/*
+The Difference Between call() and apply()
+The only difference is:
+
+call() takes any function arguments separately.
+
+apply() takes any function arguments as an array.
+
+The apply() method is very handy if you want to use an array instead of an argument list.
+*/

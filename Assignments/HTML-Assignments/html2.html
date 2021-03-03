@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Selector</title>
+</head>
+<body>
+    <button id="changecolor" type="button" onclick="changecolor_click()">
+        Change Color</button>
+        <div id="color">
+            <p>Cybage Software Pvt. Ltd. (formerly Cyberage) is an information technology consulting 
+                company founded in 1995, located in Kalyani Nagar, Pune, India. The company provides 
+                software application development and maintenance, digital services, UX design, 
+                content services, and other support services, with development centers in Pune,
+                Hyderabad and Gandhinagar in India. It also has offices in the United States, Canada,
+                United Kingdom,[4] the Netherlands, Germany, Singapore, Japan, and Australia.</p>
+        </div>
+        <script type="text/javascript">
+            function changecolor_click()
+            {
+                document.querySelector('color');
+                color.style.color = 'Blue';
+            }
+        </script>

@@ -1,0 +1,64 @@
+@mixin myTheme($theme-name, $container-bg, $left-bg, $right-bg, $innertext, $button-bg) {
+
+     
+    .#{$theme-name} {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 1px solid #0a0a0a;
+    grid-column-gap: 10px;
+    height: 500px;
+    padding: 20px;
+    background-color: $container-bg;
+  
+  
+  }   
+  .left {
+    background-color: $left-bg;
+    border: 1px solid #0a0a0a; 
+    color: $innertext;
+  
+  }
+  
+  .right {
+    background-color: $right-bg;
+    border: 1px solid #0a0a0a; 
+    color: $innertext;
+    position: relative;
+  }
+  .button {
+    background-color: $button-bg;
+    border: 0;
+    border-radius: 8px;
+    bottom: 10px;
+   
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1em 2em; 
+    position: absolute;
+    right: 8px;
+}
+}
+
+@mixin changeLabel($content,$bgColor,$fontColor){
+
+.mylabel{
+
+  &:after{
+    content: $content;
+    color:black;
+
+  }
+
+  &:hover:after{
+    content: to-upper-case($content);
+    background-color: $bgColor;
+    color:$fontColor;
+  }
+}
+
+}
+
+@include changeLabel("My Label",rgba(255, 247, 179, 0.993), blue);
+
+@include myTheme(container,rgba(255, 247, 179, 0.993), rgb(155, 221, 155),rgb(117, 139, 235) ,rgb(99, 218, 226) ,rgb(51, 36, 192));
+@include myTheme(container2,rgb(26, 26, 13), rgb(208, 235, 208),rgb(172, 232, 240) ,black ,grey);

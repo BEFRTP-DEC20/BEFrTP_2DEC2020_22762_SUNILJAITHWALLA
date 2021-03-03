@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Fullscreen API</title>
+        <script type="text/javascript">
+
+            function full_screen()
+            {
+                // check if user allows full screen of elements. This can be enabled or disabled in browser config. By default its enabled.
+                //its also used to check if browser supports full screen api.
+                if("fullscreenEnabled" in document ) 
+                {
+                    if(document.fullscreenEnabled )
+                    {
+                        console.log("User allows fullscreen");
+                    
+                        var element = document.getElementById("box");
+                        //requestFullscreen is used to display an element in full screen mode.
+                        if("requestFullscreen" in element) 
+                        {
+                            element.requestFullscreen();
+                        } 
+                  
+                    }//if
+                }
+                else
+                {
+                    console.log("User doesn't allow full screen");
+                }
+            }
+
+            function screen_change()
+            {
+                //fullscreenElement is assigned to html element if any element is in full screen mode.
+                if(document.fullscreenElement)
+                {
+                    console.log("Current full screen element is : " + 
+                   (document.fullscreenElement ))
+                }
+                else
+                {
+                    // exitFullscreen us used to exit full screen manually
+                    if ("exitFullscreen" in document) 
+                    {
+                        document.exitFullscreen();
+                    } 
+                }
+            }
+
+            //called when an event goes full screen and vice-versa.
+            document.addEventListener("fullscreenchange", screen_change);
+           
+            //called when requestFullscreen(); fails. it may fail if iframe don't have allowfullscreen attribute enabled or for something else. 
+            document.addEventListener("fullscreenerror", 
+            function(){
+                console.log("Full screen failed");
+                });
+           </script>
+        <style type="text/css">
+            div
+            {
+                height: 300px;
+                width: 300px;
+                background-color: green;
+            }
+
+          
+            div:fullscreen 
+            {
+                background-color: yellow;
+            }
+
+                      
+
+        </style>
+    </head>
+    <body>
+        <div id="box" onclick="full_screen();"></div>
+    </body>
+</html>

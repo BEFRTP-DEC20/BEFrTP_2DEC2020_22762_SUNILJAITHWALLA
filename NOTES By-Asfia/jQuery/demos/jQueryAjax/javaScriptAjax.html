@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Using the XMLHttpRequest Object</h2>
+
+<div id="demo">
+<button type="button" onclick="loadXMLDoc()">Change Content</button>
+</div>
+
+<script>
+function loadXMLDoc() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var users=JSON.parse(this.responseText);
+        console.log(users);
+        var user=JSON.stringify(users.data[0]);
+        console.log(user);
+        document.getElementById("demo").innerHTML += user;
+    }
+  };
+  xhttp.open("GET", "https://reqres.in/api/users", true);
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>

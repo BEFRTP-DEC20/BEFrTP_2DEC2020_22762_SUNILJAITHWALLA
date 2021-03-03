@@ -1,0 +1,126 @@
+<html>
+
+
+
+<link rel="stylesheet" href="assign1.css">
+
+
+
+<body>
+
+
+
+
+
+    <h2>Welcome you are using "<span id="browser"></span>" and you are on this page since <span id="min">00</span>:<span
+
+            id="sec"></span> minutes.</h2> <br>
+
+
+
+    <div id="table">
+
+        <table border="1">
+
+            <form>
+
+
+
+
+
+                <tr>
+
+                    <td><div><label for="fname"><b>First Name: </b></label><div></td>
+
+                    <td><input class="in" type="text" id="fname" name="firstname" minlength="3" maxlength="10" onblur="validateInputs('fname')"></td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td><div><label for="lname"><b>Last Name: </b></label><div></td>
+
+                    <td><input class="in" type="text" id="lname" name="lastname" minlength="3" maxlength="10"  onblur="validateInputs('lname')"></td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td><div><label for="date"><b>Date of Birth : </b></label><div></td>
+
+                    <td><input class="in" type="date" id="date" name="Dob" onblur="validateInputs('date')" required ></td>
+
+                </tr>
+
+
+
+                <tr>
+
+                    <td><div><label for="email"><b>Email: </b></label><div></td>
+
+                    <td><input class="in" type="text" id="email" name="Email"  onfocusout="validateInputs('email')"></td>
+
+                </tr>
+
+
+
+
+
+                <tr>
+
+                    <td><div><label for="address"><b>Hobbies: </b></label><div></td>
+
+                    <td><input type="checkbox" name="music" id="Reading" onclick="enableWriter(this)"><label
+
+                            for="Reading"><b>Reading</b></label><br>
+
+                        <input type="checkbox" name="music" id="Watching "><label for="Watching "><b>Watching Movies</b>
+
+                        </label><br>
+
+                        <input type="checkbox" name="music" id="Photography"><label
+
+                            for="Photography"><b>Photography</b></label><br><br>
+
+                        <div id="write"><label for="Writer" id="forWriter"><b>Favorite Writer: </b></label><br><input type="text"
+
+                                id="forWriter"  onfocusout="validateInputs('forWriter')">
+
+
+
+                    <div></td>
+
+                </tr>
+
+
+
+                <td id="reset"><input type="reset" value="Reset"><div></td>
+
+                <td id="submit"><input type="submit" value="submit" onclick="validate(event)"></button><div></td>
+
+
+
+
+            </form>
+
+        </table>
+
+    </div>
+
+
+
+</body>
+
+<script src="assign1.js" ></script>
+
+
+
+  
+
+
+
+</html>

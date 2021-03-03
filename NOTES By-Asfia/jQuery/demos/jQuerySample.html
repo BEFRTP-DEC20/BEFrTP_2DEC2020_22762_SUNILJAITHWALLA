@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <script src="./jquery-3.4.1.min.js"></script>
+        <script>
+            $("document").ready(()=>{
+                var allDivs=$('div');
+                var divWithId=$('#id1');
+                var divWithClass=$('div.mystyle')
+                var divWithTwoClasses=$('.mystyle.myfont')
+                var everySecondLi=$('li:nth-child(2n)')
+                var ahref=$('a[href~="google"]')
+                var treeTravesal=$('div').children('p')
+                var thirdLi=$('li').eq(2);
+                $('form').css('border',"2px solid black");
+                $('form').before("<span>Welcome to Cybage</span>");
+                console.log(thirdLi);
+               
+            });
+
+        </script>
+    </head>
+    <body>
+        <form>
+My data in form
+        </form>
+        <div>
+            <p>
+                Para
+            </p>
+            <section>
+                <p>Inner para</p>
+            </section>
+            <div>
+                <p>Inner Para</p>
+            </div>
+        </div>
+        <div class="mystyle">Jquery is working!!!</div>
+        <div id="id1">Jquery is working!!!</div>
+        <div class="mystyle myfont">Jquery is working!!!</div>
+        <div id="id2" class="myfont"> Jquery is working!!!</div>
+        <ul>
+            <li><a href="www.google.com">Item 1 </a></li>
+            <li><a href="www.yahoo.in">Item 2 </a></li>
+            <li><a href="www.cybage.com">Item 3 </a></li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+            <li>Item 7</li>
+        </ul>
+        
+    </body>
+</html>

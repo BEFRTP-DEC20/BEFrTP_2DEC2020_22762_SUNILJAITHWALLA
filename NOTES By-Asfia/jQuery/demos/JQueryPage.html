@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+        .blue{
+            border: 2px dashed purple;
+            color: palevioletred;
+        }
+
+        #d1{
+            border: 3px dashed darkcyan;
+            width: 200px;
+        }
+        
+        </style>
+        <script src="./jQueryDOM/Scripts/jquery-1.9.1.min.js">       </script>
+        <script>
+        
+        $(document).ready(function(){
+            $('input[name="n1"]').val('Unknown');
+            $('button[name="b1"]').click(getData);
+        });
+
+function getData(){
+    var name=$('input[name="n1"]').val();//getter
+   // $('input[name="n1"]').css('backgroundColor','pink')
+    $('input[name="n1"]').toggleClass('blue')
+    alert("Name: "+name);
+    $('#d1').fadeToggle('slow');
+}
+
+function controlTable(){
+    $('#t1').toggle();
+    console.log('Width: '+$('#d1').width());
+    $('#d1').width('400px');
+    $('#d1').prepend("<span> Welcome</span>")
+    $('#d1').before("<span>Welcome Addedd</span>")
+}
+
+        </script>
+    </head>
+    <body>
+<div id="d1">
+    Div 1
+</div>
+<div id='d2' class="odd">
+    Div 2
+</div>
+<div class='odd even'>
+    Div 3
+</div>
+<button name='cntrl' onclick="controlTable()">Control Table view</button>
+            <table id="t1" border=2>
+                <tr>
+                    <td><a href="www.google.com">Google</a></td>
+                    <td><a href="www.yahoo.com">Yahoo</a></td>
+                    <td><a href="www.cybage.com">Cybage</a></td>
+                </tr>
+            </table>
+
+<div id='d3'>
+    <p>Para 1</p>
+<div>
+    <p>Para 2</p>
+</div>
+Enter your details below: 
+<div id="name">Name: <input name='n1' type="text"><br></div>
+Age: <input name='age' type="number"><br>
+Address: <input name='add' type="text"><br>
+<button name="b1" type="submit">Send</button>
+</div>
+
+    </body>
+</html>

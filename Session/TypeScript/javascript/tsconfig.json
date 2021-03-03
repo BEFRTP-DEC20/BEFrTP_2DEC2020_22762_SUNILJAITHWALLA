@@ -1,0 +1,20 @@
+{
+  "compileOnSave": true,
+  
+  "compilerOptions": {
+      "module": "CommonJS",
+      "sourceMap": true
+    
+  }
+  
+}
+// {
+//   "compilerOptions": {
+//       "outDir": "./dist",
+//       "allowJs": true,
+//       "target": "es5"
+//   },
+//       "include": [
+//       "./src/**/*"
+//   ]
+// }

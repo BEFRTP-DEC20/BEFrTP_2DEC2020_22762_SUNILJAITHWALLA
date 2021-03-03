@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <style>
+        
+        .abc{
+            border: 2px dashed violet;
+            color: greenyellow;
+
+        }
+        
+        </style>
+        <script src='Scripts/jquery-1.9.1.min.js'></script>
+        <script>
+        
+        $(document).ready(function(){
+            var mydiv=$('#mydiv').html();
+            console.log('Inside console '+mydiv);//get html()
+            $('#mydiv').html('Hello World!!!'+mydiv);//set html()
+            
+             $('#s1').on('click',showData)
+            $("input[type='reset']").click(()=>$('#mydiv').html('').removeClass('abc'));
+
+            function showData(){
+
+            $('#mydiv').toggleClass('abc');
+            $('#mydiv').html('Name: '+$('.fname').val()+" "+$('.mname').val()+' '+$('.lname').val());
+        }
+       
+        });
+        
+        
+        </script>
+    </head>
+    <body>
+        <div id='mydiv'></div>
+        <form>
+            Enter firstname: <input type="text" class='fname' >
+            Enter middlename: <input type="text" class='mname' >
+            Enter lastname: <input type="text" class='lname'>
+            <input type="button" value="GO" id='s1'>
+            <input type="reset">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+	<head> 
+		<title>What is Prototype</title>
+	</head>
+<body>
+
+
+<script>
+//Prototype is an object which exists for every function in JS
+'use strict';
+var arr=['red','blue','green','orange'];
+
+//var last=arr[arr.length-1];//1st
+
+//Object.defineProperty(arr,'last',
+				//	{get: function(){return this[this.length-1];}});
+
+//console.log(arr.last);
+//if i create new array so how to find last element i need to rewrite the same function again
+
+var fruit=['Gauva','WaterMelon','Papayan','Kiwi'];
+
+//Object.defineProperty(fruit,'last',
+					//{get: function(){return this[this.length-1];}});
+
+					
+//console.log(fruit.last);
+
+//So instead i will change the type to Array.Prototype
+
+Object.defineProperty(Array.prototype,'last',
+					{get: function(){return this[this.length-1];}});
+	
+console.log(fruit.last);
+console.log(arr.last);
+
+</script>
+</body>
+</html>

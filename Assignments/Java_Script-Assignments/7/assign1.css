@@ -1,0 +1,71 @@
+body {
+
+    background-color: lightblue;
+
+}
+
+#write {
+
+    display: none;
+
+}
+
+
+
+p {
+
+    float: left;
+
+}
+
+
+
+h2 {
+
+    text-align: center;
+
+}
+
+
+
+#table {
+
+    display: flex;
+
+    justify-content:center;
+
+}
+
+table {
+
+   width: 80%;
+
+   height: 50%;
+
+   background-color: lightslategrey;
+
+}
+
+
+
+td {
+
+    width: 50%;
+
+}
+
+.in {
+
+    width: 100%;
+
+   height: 100%;
+
+   background-color: lightblue;
+
+}
+
+label {
+
+    margin: 6;
+
+}

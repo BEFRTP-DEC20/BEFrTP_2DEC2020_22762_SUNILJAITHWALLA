@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="openWin()">Open "myWindow"</button>
+<button onclick="closeWin()">Close "myWindow"</button>
+
+<script>
+'use strict';
+var myWindow;
+
+function openWin() {
+    myWindow = window.open();
+    myWindow.document.write("<p>This is 'myWindow'</p>");
+}
+
+function closeWin() {
+    myWindow.close();
+}
+</script>
+
+</body>
+</html>

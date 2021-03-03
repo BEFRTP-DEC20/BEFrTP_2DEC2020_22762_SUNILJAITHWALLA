@@ -1,0 +1,60 @@
+<html>
+<head>
+<style>
+canvas {
+   <span id="IL_AD4" class="IL_AD">border</span>: 1px dotted black;
+   position:absolute;
+   top:0px;
+   bottom:0px;
+   left:0px;
+   right:0px;
+   margin:auto;
+}
+
+canvas:hover{
+	conte	
+}
+</style>
+<title>Smileys</title>
+</head>
+<body>
+<canvas id="a" width="500" height="200">
+  </canvas>
+<script>
+
+// Set up!
+var a_canvas = document.getElementById("a");
+var context = a_canvas.getContext("2d");
+ 
+// Draw <span id="IL_AD11" class="IL_AD">the face</span>
+context.fillStyle = "yellow";
+context.beginPath();
+context.arc(95, 100, 40, 0, 2*Math.PI);
+context.closePath();
+context.fill();
+context.lineWidth = 2;
+context.stroke();
+context.fillStyle = "black";
+ 
+// Draw the left eye
+context.beginPath();
+context.arc(75, 90, 5, 0, 2*Math.PI);
+context.closePath();
+context.fill();
+ 
+ 
+// Draw the right eye
+context.beginPath();
+context.arc(114, 90, 5, 0, 2*Math.PI);
+context.closePath();
+context.fill();
+ 
+// Draw the mouth
+context.beginPath();
+context.arc(95, 105, 26, Math.PI, 2*Math.PI, true);
+context.closePath();
+context.fill();
+</script>
+  
+ </body>
+</html>

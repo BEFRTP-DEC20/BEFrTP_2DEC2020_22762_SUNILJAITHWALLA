@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="878" height="200"></canvas>
+    <script>
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      var centerX = canvas.width / 2;
+      var centerY = canvas.height / 2;
+      var radius = 40;
+
+	  //void ctx.arc(x, y, radius, startAngle, endAngle [, anticlockwise]);
+	  //true, causes the arc to be drawn counter-clockwise between the two angles. By default it is drawn clockwise.
+	  
+      context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = 'blue';
+      context.fill();
+      context.lineWidth = 2;
+      context.strokeStyle = 'red';
+      context.stroke();
+	  
+	  
+	  context.beginPath();
+      context.arc(centerX+10, centerY+10, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = 'yellow';
+      context.fill();
+      context.lineWidth = 2;
+      context.strokeStyle = 'red';
+      context.stroke();
+	  
+	  
+	  context.beginPath();
+      context.arc(centerX+50, centerY+40, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = 'red';
+      context.fill();
+      context.lineWidth = 2;
+      context.strokeStyle = 'green';
+      context.stroke();
+	  
+	  context.beginPath();
+      context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+      context.fillStyle = 'blue';
+      context.fill();
+      context.lineWidth = 2;
+      context.strokeStyle = 'red';
+      context.stroke();
+	  
+	  //Semi-Circle//
+	  
+	  context.beginPath();
+      context.arc(588, 75, 70, 0, Math.PI, false);
+      context.closePath();
+      context.lineWidth = 5;
+      context.fillStyle = 'red';
+      context.fill();
+      context.strokeStyle = '#550000';
+      context.stroke();
+	  
+	  
+	  
+    </script>
+  </body>
+</html> 

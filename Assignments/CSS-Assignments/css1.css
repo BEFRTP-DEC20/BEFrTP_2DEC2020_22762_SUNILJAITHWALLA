@@ -1,0 +1,20 @@
+
+table{
+    border-collapse: separate;
+    border-spacing: 1;
+    width: 25%;
+    border: 1px solid grey;
+    text-align: center;
+
+}
+th,td{
+    text-align: left;
+    padding: 10px;
+
+}
+tr:nth-child(even){
+    background-color: greenyellow;
+}
+th{
+    background-color:grey;
+}

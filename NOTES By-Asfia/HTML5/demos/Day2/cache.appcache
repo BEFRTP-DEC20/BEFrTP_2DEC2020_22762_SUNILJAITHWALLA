@@ -1,0 +1,20 @@
+
+CACHE MANIFEST 
+FALLBACK
+offline.html
+NETWORK: 
+/checking.cgi 
+CACHE:
+/test.css
+/test.js
+
+Resources listed below CACHE:
+The above file is loaded, the browser will download the test.css, test.js and test.png files from the root directory in the web server.[4] As a result, whenever one's network is not connected, the resources will be available to them offline.
+
+NETWORK: is the start of the "online whitelist" section. The resources listed under this section are never cached and are not available offline.As a result, an error will occur when an attempt is made offline to load the resource.
+
+FALLBACK: The fallback section in a cache manifest file can be used to substitute online resources that cannot be cached or were not cached successfully.
+
+
+	
+

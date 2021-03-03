@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>map demo</title>
+  <style>
+  p {
+    color: red;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+ 
+<p><b>Values: </b></p>
+
+  <input type="text" name="name" value="John">
+  <input type="text" name="password" value="password">
+  <input type="text" name="url" value="https://johnresig.com/">
+  <button>Send</button>
+
+ <script>
+   $('button').click(function(){
+   var inputs=$( "input" );
+   var data= $.map(inputs,(item,index)=> {
+    console.log($(item).val(),index);
+   return $(item).val();
+   }   );
+   console.log(data);
+   
+   $( "p" ).append(<p>+" welcome"+</p>
+    data.join(' , ')
+   );
+   });
+
+
+
+
+/*
+function fun1() {
+  
+    return this + 1;
+}
+function fun2(el) {
+    return el + 1;
+}
+
+var item = [5,4,3,2,1];
+
+var newitem1 = $.each(item, fun1);
+var newitem2 = $.map(item, fun2);
+
+console.log(newitem1); // [5, 4, 3, 2, 1] 
+console.log(newitem2); // [6, 5, 4, 3, 2] 
+so, "each" function returns the original array while "map" function returns a new array
+*/
+</script>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+</body>
+</html>

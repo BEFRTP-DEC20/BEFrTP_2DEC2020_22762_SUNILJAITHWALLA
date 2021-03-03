@@ -1,0 +1,52 @@
+<html>
+<body>
+<font color="Red"> Lemme Know your favourite Drink</font><br>
+<font color="Red"> Lemme Know your favourite Drink</font><br>
+<font color="Red"> Lemme Know your favourite Drink</font><br>
+<font color="Red"> Lemme Know your favourite Drink</font><br>
+<br>
+
+<script>
+var element=document.querySelectorAll('font');
+console.log(element);
+
+element.forEach((item)=> {
+	item.onclick=()=>{
+		var val=prompt('Enter your drink');
+		alert(val);
+	} });
+
+
+// element.onclick=()=>{
+// 	var value=prompt('Enter ur drink');
+// 	console.log(value)
+
+
+
+
+
+
+// var x=document.querySelectorAll('font');
+// console.log(x);
+// for(i=0;i<x.length;i++)
+// {
+// x[i].onclick = function() {
+// 	console.log("In function");
+//     x=prompt("Enter ur favourite Soft Drink ");
+// 	switch(x)
+// 	{
+// 	case 'Coke': alert("Coke is my favourite drink");
+// 	break;
+// 	case 'Slice': alert("Slice is my favourite drink");
+// 	break;
+// 	case '7-UP': alert("7-UP is my favourite drink");
+// 	break;
+// 	default: alert("Sorry no drink of ur choice");
+	
+// 	}
+// }//for
+// }//function
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+   <head>
+       <style>
+       .abc{
+           background-color: aqua;
+           border: 2px dashed gray;
+           width: 30px;
+       }
+       
+       </style>
+      <script type="text/javascript" src="jquery.js"></script>
+      <script type="text/javascript">
+        
+		  $(document).ready(function(){
+		  
+
+$('#myContent').append('<strong>Hello World</strong>');
+
+$('#myContent').after('<div>Welcome</div>');
+console.log($('#myContent').html());
+//$('#myContent').html("Welcome to jQuery");
+
+    $('#myContent').css('background-color','pink');
+
+console.log($('#id1').attr('type'));
+$('#id1').attr('type','number');
+
+		  $('#myContent').click(function(){
+		  alert('Button clicked');
+		  	  });
+		});
+
+
+
+
+
+      </script>
+   </head>
+   <body>
+       <div id="myContent">
+           My jQuery enabled Page!
+       </div>
+
+       Enter date: <input type="datetime" id="id1">
+
+
+       
+
+   </body>
+</html>

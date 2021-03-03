@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <style>
+        .bColor{
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+        </style>
+        <script src="./jquery-3.4.1.min.js"></script>
+        <script>
+        $(document).ready(()=>{
+            $('header').css('border',"2px solid black");
+            $('header').html('  Cybage ...Delevering Value Scientifically');
+            $('footer').css({'border':"2px solid black",
+            float:"left",width:"100%"});
+            $('section').css({'border':"2px solid black",
+            float:"left"});
+            $("section").height("90%");
+            $("section").width("32.7%");
+             $('button').click(()=>{
+            $('header').toggle(); 
+            $('header,footer,section').toggleClass('bColor');          
+        });
+        });
+        </script>
+    </head>
+
+    <body>
+         <button>Click to Add effects</button> 
+        <header>
+            
+        </header>
+        <section>
+            Column 1
+        </section>
+        
+        <section>
+            Column 2
+        </section>
+        
+        <section>
+            Column 3
+        </section>
+           <footer>
+            @Cybage January 2020
+            </footer>
+    </body>
+</html>

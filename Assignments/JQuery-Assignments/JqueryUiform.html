@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jquery ui Form</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jqueryUi.js"></script>
+    <link rel="stylesheet" href="jqueryUi.css">
+
+    <!-- Bootstrap libraries -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Jquery ui libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+
+    <!-- select2 libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js" integrity="sha512-2ImtlRlf2VVmiGZsjm9bEyhjGW4dU7B6TNwh/hx/iSByxNENtj3WVE6o/9Lj4TJeVXPi4bnOIMXFIJJAeufa0A==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
+
+    <!-- jquery validate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js" integrity="sha512-UdIMMlVx0HEynClOIFSyOrPggomfhBKJE28LKl8yR3ghkgugPnG6iLfRfHwushZl1MOPSY6TsuBDGPK2X4zYKg==" crossorigin="anonymous"></script>
+
+    <!-- for eye icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+</head>
+<body>
+    <form action="" name="infoForm">
+
+        <div class="form-group col-sm-4">
+            <label for="">Username</label>
+            <input type="text" name="username" class="form-control">
+        </div>
+
+        <div class="form-group col-sm-4">
+            <label for="password">Password</label>
+            <input id="pass_log_id" type="password" name="password" class="form-control">
+        </div>
+
+        <div class="form-group col-sm-4">
+            <label for="">Confirm Password</label>
+            <input type="password" name="confirmPassword" id="cnfPwd" class="form-control">
+            <span toggle="#password-field" class="fa fa-fw fa-eye-slash field_icon toggle-password" id="toggle"></span>
+        </div>
+
+        <div class="form-group col-sm-4">
+            <label for="">Email</label>
+            <input type="email" name="email" id="" class="form-control">
+        </div>  
+
+        <div class="form-group col-sm-4"> 
+            <label for="">Mobile</label>
+            <input type="tel" name="phoneNumber" id="" class="form-control">
+        </div>  
+
+        <div class="form-group col-sm-4">
+            <label for="skills">Skills:</label>
+            <input id="skillSet" name="skills" class="form-control">
+        </div>  
+
+        <div class="form-group col-sm-4">
+            <label for="city">City</label>
+            <select id="city" style="width:300px;" >
+                <!-- Dropdown List Option -->
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </body>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.button, .primary, .primary:hover, .primarydisabled, .secondary, .secondary:hover, .secondarydisabled {
+  border-radius: 3px;
+  padding: 12px 15px 12px 15px;
+  background-color: #8bc34a;
+  border: 0;
+  width: 150px;
+  font-family: "SegoeUI SemiBold";
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.primary, .primary:hover {
+  background-color: #8bc34a;
+  color: #FFFFFF;
+  border: 1px solid #8bc34a;
+}
+
+.primary:hover {
+  background-color: #9dce5d;
+  color: #FFFFFF;
+  border: 1px solid #9dce5d;
+}
+
+.primarydisabled {
+  background-color: #eeeeee;
+  color: #999999;
+  border: 1px solid #eeeeee;
+}
+
+.secondary, .secondary:hover {
+  background-color: #FFFFFF;
+  color: #2095f2;
+  border: 1px solid #2095f2;
+}
+
+.secondary:hover {
+  background-color: #2095f2;
+  color: #FFFFFF;
+  border: 1px solid #2095f2;
+}
+
+.secondarydisabled {
+  background-color: #ffffff;
+  color: #999999;
+  border: 1px solid #cccccc;
+}
+/*# sourceMappingURL=sassasg2.css.map */

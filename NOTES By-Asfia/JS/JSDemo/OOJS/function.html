@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Functions Demo</title>
+	</head>
+<body>
+<script>
+/* Declare the function 'myChoice' */
+function myChoice(theObject) {
+   theObject.brand = "Toyota";
+   theObject.model=" Corolla";
+   theObject.year="2014";
+ }
+ 
+ function show(car)
+ {
+ console.log(car.brand);
+ console.log(car.model);
+ console.log(car.year);
+ }
+ /*
+  * Declare variable 'mycar';
+  * create and initialize a new Object;
+  * assign reference to it to 'mycar'
+  */
+ var mycar = {
+   brand: "Honda",
+   model: "Accord",
+   year: 1998
+ };
+
+ /* Logs 'Honda' */
+ console.log(mycar.brand);
+
+ /* Pass object reference to the function */
+ myChoice(mycar);
+
+ /*
+  * Logs 'Toyota' as the value of the 'brand' property
+  * of the object, as changed to by the function.
+  */
+ console.log(mycar.brand);
+ 
+	show(mycar);
+ 
+ </script>
+	</body>
+	
+</html>

@@ -1,0 +1,24 @@
+<menu type="toolbar">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+</menu>
+
+
+<div contextmenu="myMenu">Right-Click Me</div>
+<menu type="context" id="myMenu">
+    <menuitem label="Item 1" title="The first menu item" onclick=show() icon=".\img1.png">
+    <menuitem label="Item 2" title="The second menu item" >
+</menu>
+
+
+<menu type="context" id="myMenu">
+    <menuitem type="checkbox" label="Enable CSS" checked>
+    <menuitem type="checkbox" label="Enable JS">
+    <hr>
+    <menuitem type="radio" radiogroup="img" label="PNG" checked>
+    <menuitem type="radio" radiogroup="img" label="JPEG">
+    <menuitem type="radio" radiogroup="img" label="GIF">
+</menu>
+
+//https://dpogue.ca/articles/html5-menu.html

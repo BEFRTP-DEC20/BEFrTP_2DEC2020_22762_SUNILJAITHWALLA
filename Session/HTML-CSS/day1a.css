@@ -1,0 +1,23 @@
+body{
+   
+  
+    background-color: lightseagreen;
+   
+}
+nav{
+    text-align: center;
+    background-color: white;
+   
+}
+article{
+        background-color: rgb(128, 0, 107) ;
+}
+footer{
+  background-color: lightcoral;
+}
+aside{
+ background-color: lime;
+}
+img{
+   width: 150px;
+}

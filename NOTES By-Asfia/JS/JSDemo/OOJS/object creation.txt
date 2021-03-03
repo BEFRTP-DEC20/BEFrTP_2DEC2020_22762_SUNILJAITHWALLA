@@ -1,0 +1,65 @@
+We can create object using 2 diff ways: 
+1.By using Object Literals.-->var cat={name:"Fluffy",color:"White"};
+2.By calling constructor.
+3.Object.create();
+
+Why use [] or dot for accessing properties:
+If prop name is Eye Color this could be accessed using [] as it have space
+eg. cat['Eye Color'].
+
+'use strict';
+
+var Cat={name:"Fullfy",color:"White",'Eye Color':"Blue"};
+Cat['Eye Color']="grey";
+document.write(Cat['Eye Color']);
+
+
+1.
+function Cat(){
+this.name="Fluffy",
+this.color="White"
+};
+
+var cat=new Cat();
+document.write(cat);
+
+
+2.  function Cat(n,c){
+this.name=n,
+this.color=c
+};
+
+var cat=new Cat("Fluffy","White");
+document.write(cat);
+
+3. 
+var cat=Object.create(Object.prototype,
+{
+name:{value: "Fluffy",
+		enumerable:true,
+		writable:true,
+		configurable:true},
+color: {
+	value: "White",
+		enumerable:true,
+		writable:true,
+		configurable:true}
+});
+
+document.write(cat);
+
+
+
+
+////****ECMA6 new way to create classes:****////////
+
+class Cat{
+constructor(name,color)
+{
+this.name=name
+this.color=color	
+}
+};
+
+var cat=new Cat("Fluffy","White");
+document.write(cat);

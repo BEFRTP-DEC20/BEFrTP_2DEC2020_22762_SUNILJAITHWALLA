@@ -1,0 +1,90 @@
+<html>
+<head>
+    <style>
+        .one{
+            background-color: aquamarine;
+        }
+        .two{
+            color: brown;
+        }
+        </style>
+    <script src="./Scripts/jquery-1.9.1.js"></script>
+    <script>
+         //document.addEventListener('click',function(){alert("Welcome to even listener...");});
+        $(document).ready(function(){
+            $('#id2').append('<span>Appended</span>');
+            $('#id2').prepend('<span>Prepended</span>');
+            $('#id2').before('<span>Before</span>');
+            $('#id2').after('<span>After</span>');
+            
+
+            $('form').submit(function(){
+                var name=$('input[name="n1"]').val();
+                alert('Name: '+name);
+            })
+        });
+
+        function myfun(){
+            $('#id1').css('border','2px dashed green');
+            var name=$('input').val();
+            alert("Name: "+name);
+        }
+
+        function myfun1(){
+            $('table').css('border','2px solid blue');
+            $('tr:even').toggleClass('one two');
+            $('#id1').toggle();
+        }
+        
+      
+        </script>
+</head>
+<body>
+    <div id="id1" class='one'>Welcome to jQuery</div>
+    <div id="id2" class="one two">Welcome to jQuery</div>
+    <div id="id3" class='two'>Welcome to jQuery</div>
+    <div id="id4">Welcome to jQuery</div>
+    Enter Name: <input type="text" name="name">
+    <input type="button" value="Send">
+    <a href="www.cybage.com">Cybage</a>
+    <a href="www.cybage.com">Cybage</a>
+    <a href="www.google.com">Google</a>
+    <a href="www.yahoo.co.in">Yahoo</a>
+    <table border=2>
+        <tr>
+            <th>Employee Name</th>
+            <th>Designation</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>SE</td>
+        </tr>
+        <tr>
+            <td>Samuel</td>
+            <td>SSE</td>
+        </tr>
+        <tr>
+            <td>Samuel</td>
+            <td>SSE</td>
+        </tr>
+        <tr>
+            <td>Samuel</td>
+            <td>SSE</td>
+        </tr>
+        <tr>
+            <td>Samuel</td>
+            <td>SSE</td>
+        </tr>
+    </table>
+
+    <input type="button" value="Apply"onclick="myfun1()">
+
+
+    <form>
+        Enter Name: <input type="text" name="n1"><br>
+        Enter Address: <input type="text" ><br>
+        Enter Age: <input type="number" ><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

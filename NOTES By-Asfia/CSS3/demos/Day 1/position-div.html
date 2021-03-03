@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	div{
+		display: block;
+		box-shadow: 20px 20px 10px orangered;
+		transform:scale(2,2);
+		/* transform:rotate(20deg);
+		//transform: translate(50px,10px); */
+
+	}
+.div3{
+	
+	right: 300px;
+	left: 300px;
+	top: 300px;
+	bottom: 300px;
+	height: 200px;
+    width: 300px;
+	background-color:red;
+	position: relative;
+}
+
+.div1{
+   	right: 300px;
+	left: 300px;
+	top: 300px;
+	bottom: 300px;
+	height: 200px;
+    width: 300px;
+	background-color:blue;
+	position: relative;
+	z-index: -1;
+}
+.div2{
+   	position:absolute;
+    top: 300px;
+	right: 200px;
+	bottom: 300px;
+	height: 200px;
+    width: 300px;
+	background-color:pink;
+}
+</style>
+</head>
+<body>
+
+<div class="div1"> 
+Div1
+</div>
+
+<div class="div2" > 
+Div2
+</div>
+
+<div class="div3"> 
+Div3
+</div>
+</body>
+</html>

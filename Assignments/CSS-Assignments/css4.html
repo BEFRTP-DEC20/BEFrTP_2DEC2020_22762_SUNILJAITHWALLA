@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration Form</title>
+    <h1>Registration Form</h1>
+    <link rel="stylesheet" href="cssass4.css">
+</head>
+<body>
+    <form id="myForm">
+    <div class="grid-container">
+        <div>Employee ID:</div>
+        <div><input type="number" id="empid" name="empid" min="10001" max="15000"></div>
+        <div>First Name:</div>
+        <div><input type="text" id="fname" name="fname" minlength="3" max="15"></div>
+        <div>Last Name:</div>
+        <div><input type="text" id="lname" name="lname" minlength="5" max="25"></div>
+        <div>Department:</div>
+        <div>
+            <form>
+                <input type="radio" id="IT" name="department" value="IT">
+                <label for="IT">IT</label><br>
+                <input type="radio" id="HR" name="department" value="HR">
+                <label for="HR">HR</label><br>
+                <input type="radio" id="Finance" name="department" value="Finance">
+                <label for="Finance">Finance</label><br>
+                <input type="radio" id="Admin" name="department" value="Admin">
+                <label for="Admin">Admin</label><br>
+            </form>
+        </div>
+
+        <div>Date of Joining:</div>
+        <div>
+            <label for="DOJ"></label>
+            <input type="date" id="DOJ" name="DOJ">
+        </div>
+
+        <div>Email:</div>
+        <div><input type="email" id="email" name="email"></div>
+
+        <div>Contact No:</div>
+        <div><input type="tel" id="Contact" name="Contact" maxlength="10" pattern="^[1-9]+[0-9]{9}"></div>
+
+        <div>Address:</div>
+        <div><textarea id="w3review" name="w3review" rows="6" cols="50"></textarea></div>
+
+        <div>Training Programs to be attended:</div>
+        <div>
+        <input type="checkbox" id="web basics" name="web basics" value="web basics">
+        <label for="web basics">Web Basics</label><br>
+        <input type="checkbox" id="c#" name="c#" value="c#">
+        <label for="c#">C#</label><br>
+        <input type="checkbox" id="Entity Framework" name="Entity Framework" value="Entity Framework">
+        <label for="Entity Framework">Entity Framework</label><br>
+        <input type="checkbox" id="ASP NET MVC" name="ASP NET MVC" value="ASP NET MVC">
+        <label for="ASP NET MVC">ASP NET MVC</label><br>
+        <br>
+    
+    </div>
+
+    <div></div>
+
+    <div><button onclick="location.href= 'registered.html'" type="submit" form="nameform" value="Register" required>Register</button>
+        <button onclick="myFunction()" value="Cancel" type="submit" form="nameform" value="Cancel">Cancel</button></div>
+        </div>
+    </form>
+
+        <script>
+            function myFunction(){
+                document.getElementById("myForm").reset();
+            }
+        </script>
+</body>
+</html>

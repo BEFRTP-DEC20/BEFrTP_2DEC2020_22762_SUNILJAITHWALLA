@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>Object Oriented JavaScript</title>
+	</head>
+	<body>
+		<script>
+		
+		fucntion Animal(){}
+		
+		Animal.prototype.speak=function(){console.log("Grunt");}
+		
+		function Cat(name,color)
+		{this.name=name,
+		 this.color=color};
+		
+				 
+		Cat.prototype =Object.create(Animal.prototype);
+		var cat1=new Cat('Fluffy','White');
+		
+		cat1.speak();
+		console.log(cat1 instanceof Cat);
+		console.log(cat1 instanceof Animal);
+		var c2=new Cat('Muffin','Grey');
+		
+		console.log(c1.__proto__);//Cat
+		console.log(c1.__proto__.__proto__);//Object
+		
+		</script>
+	</body>
+</html>

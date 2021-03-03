@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s;
+}
+
+div:hover {
+    width: 300px;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div></div>
+
+<p>Hover over the div element above, to see the transition effect.</p>
+
+</body>
+</html>
+ -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    -webkit-transition: width 3s ease ,background 3s; /* Safari */
+    -webkit-transition-delay: 1s; /* Safari */
+    transition: width 3s ease ,height 3s 1s,background 3s 1s;
+}
+
+div:hover {
+    width: 300px;
+	height: 500px;
+	background: green;
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div>Welcome to Cybage!!!!</div>
+
+<p>Hover over the div element above, to see the transition effect.</p>
+<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+
+h1{
+    background-color: deepskyblue;
+    text-align: center;
+}
+aside{
+    display: inline;
+    
+    padding-right: 0%;
+    float: right;
+    background-color: deepskyblue;
+    text-align: center;
+}
+footer{
+    text-align: center;
+    background-color: deepskyblue;
+}
+script{
+    
+    float: center;
+}
+button{
+    background-color: goldenrod;
+    padding: 7px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+article{
+    width: 30%;
+    padding: 20px;
+    background-color: darkgrey;
+  
+    
+}

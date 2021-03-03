@@ -1,0 +1,5 @@
+projectKey=ng_g2_MajorProject
+serverUrl=http://172.27.12.78
+dashboardUrl=http://172.27.12.78/dashboard/index/ng_g2_MajorProject
+ceTaskId=AXfzUAg3irXW5IlAPXEo
+ceTaskUrl=http://172.27.12.78/api/ce/task?id=AXfzUAg3irXW5IlAPXEo

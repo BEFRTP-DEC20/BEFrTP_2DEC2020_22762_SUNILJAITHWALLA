@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+        $(document).ready(function(){
+
+               var alldivs=$('div');
+               console.log(alldivs);
+              var id1=$('#myd1');
+              console.log(id1);
+               var divwithid=$('div#myd2'); 
+               console.log(divwithid);
+                var class1=$('.myc1');
+                console.log(class1);
+                var class1class2=$('.myc1.myc2');
+                console.log(class1class2);
+
+                var findq=$('#myd1').find('input[type=text]');
+                console.log(findq);
+
+                var childrenq=$('#myd1').children('input[type=text]');
+                console.log(childrenq);
+
+                var threddli=$('li').eq(2);
+                console.log(threddli);
+
+
+        });
+        
+        function showData(){
+            
+                $('#myd1').html($('input[name=username]').val()).css('border','2px dashed red');
+
+        }
+
+
+        </script>
+    </head>
+
+    <body>
+
+        <div id="myd1">
+                        Div 1
+                        <p>
+         Enter your user name: <input type="text" name="username">
+         <button id="b1" onclick="showData()">Click</button>
+                        </p>
+        </div>
+
+        <div id='myd2' class="myc1">
+            Div 2
+        </div>
+
+        <div class="myc2 myc1">
+            Div 3
+        </div>
+
+        <div class="myc3" id="myd3">
+            Div 4
+        </div>
+
+        <div >
+            Div 5
+            <ul>
+
+                <li>         Item 1            </li>
+                <li>         Item 2               </li>
+                <li>           Item 3           </li>
+               <li>                Item 4             </li>
+              <li>                         Item 5                       </li>
+                
+            </ul>
+
+
+        </div>
+
+
+    </body>
+</html>

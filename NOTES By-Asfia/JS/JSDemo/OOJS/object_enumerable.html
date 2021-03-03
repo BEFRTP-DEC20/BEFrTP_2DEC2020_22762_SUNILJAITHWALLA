@@ -1,0 +1,22 @@
+<html>
+
+<body>
+	<script>
+
+'use strict';
+
+var Cat = {
+  name: {fname: "Fulffy",lname:"Dcosta"},
+  color: "White"
+}
+
+Object.getOwnPropertyDescriptor(Cat,'name');
+
+Object.defineProperty(Cat,'name',{enumerable:false});
+
+for(var prop in Cat)
+console.log(prop+" : "+Cat[prop])
+
+	</script>
+</body>
+</html>

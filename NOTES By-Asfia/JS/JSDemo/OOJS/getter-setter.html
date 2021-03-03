@@ -1,0 +1,56 @@
+<html>
+<body>
+<script>
+
+'use strict';
+
+var Cat = {
+ name:{first:'John',last:'Dsouza'},
+ color:'White'
+};
+
+Object.defineProperty(Cat,'fullname',{
+					get: function () {
+                        return this.name.first+"  "+this.name.last;
+                    },//getter
+
+					set:function(val)
+						{
+						var value=val.split(' ');
+						this.name.first=value[0];
+						this.name.last=value[1];
+						}//setter
+                        });
+                        
+    Cat.fullname="Muffin Top" //set
+    console.log(Cat.fullname); //get
+
+
+    Cat.fullname='Morphy Richards';//settter
+    Cat.fullname;//getter
+
+</script>
+</body>
+</html>
+
+
+<!-- *//We can do it at the time of object creation as well
+
+//var person = {
+    firstName: 'Jimmy',
+    lastName: 'Smith',
+    get fullName() {
+        return this.firstName + ' ' + this.lastName;
+    },
+    set fullName (name) {
+        var words = name.toString().split(' ');
+        this.firstName = words[0] || '';
+        this.lastName = words[1] || '';
+    }
+}
+
+person.fullName = 'Jack Franklin';
+console.log(person.firstName); // Jack
+console.log(person.lastName) // Franklin
+
+*/ -->

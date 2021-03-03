@@ -1,0 +1,19 @@
+<form #imageForm='ngForm' (ngSubmit)='editImage(imageForm)'>
+    Image Name:
+    <input type="text" [(ngModel)]="newImage.imageName"  name="imageName" 
+    #imageName='ngModel' required>
+    <span *ngIf="!imageName.valid && imageName.touched">
+    <span *ngIf="imageName.errors?.required">
+     Name is required</span></span><br>
+    Image Description:
+    <input type="text" [(ngModel)]='newImage.imageDesc' name="imageDesc" 
+    pattern="[0-9]" #imageDesc='ngModel' >
+    <span *ngIf="!imageDesc.valid && imageDesc.touched">
+    <span *ngIf="imageDesc.errors?.pattern">
+     Incorrect format</span></span><br>
+    Image Category:
+    <input type="text" [(ngModel)]='newImage.imageCategory' name='imageCategory'><br>
+    Image Location:
+    <input type="text" [(ngModel)]='newImage.imageSrc' name='imageLoc'><br>
+    <input type="submit" value="Add"><input type="reset">
+    </form>

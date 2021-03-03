@@ -1,0 +1,44 @@
+<div>
+<!-- <app-child [childCount]='parentCount'
+(increemnt)='getCount($event)'></app-child> -->
+
+  <h1>{{parentCount}}</h1>
+
+    <!-- <table border="2" *ngIf= 'images && images.length'>
+        <tr><th>Image Id</th>
+            <th>Image Name</th>
+            <th>Image </th>
+            <th>Image Category</th>
+            <th>Image Description</th>
+        </tr>
+        <tr *ngFor='let img of images'>
+            <td>{{img.imgaeId}}</td>
+            <td>{{img.imageName}}</td>
+            <td>{{img.imageSrc}}</td>
+            <td>{{img.imageCategory}}</td>
+            <td>{{img.imageDesc}}</td>  
+        </tr>
+    </table> -->
+
+  
+
+Search Image: <input type="text" [(ngModel)]='search'>
+<br>
+{{search}}
+<br>
+    <div class="row" *ngIf= 'images && images.length'>
+        <div class="col-4" *ngFor='let img of images'>
+            <div class="card text-dark border-primary" style="width: 18rem;">
+                <img class="card-img-top" [src]='img.imageSrc'  [alt]='img.imageName'>
+                <div class="card-body">
+                  <h5 class="card-title">{{img.imageCategory}}</h5>
+                  <p class="card-text">{{img.imageDesc}}</p>
+                  <button class="btn btn-primary" (click)='toggleImage()'>Show/Hide</button>
+                </div>
+              </div>
+          </div>
+        </div>
+             
+      </div>
+
+

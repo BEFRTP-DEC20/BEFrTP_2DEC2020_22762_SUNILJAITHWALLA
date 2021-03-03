@@ -1,0 +1,22 @@
+<html>
+<body>
+<script>
+
+'use strict';
+
+var Cat = {
+  name: "Fulffy",//name{first:"Fluffy",last:"Schinder"} still it will change the name to Scrathy so solution is use Object.freeze(Cat,name);
+  color: "White"
+};
+Object.defineProperty(Cat,'name',{configurable:false});
+Object.defineProperty(Cat,'name',{enumerable:false});//we cant do
+Object.defineProperty(Cat,'name',{configurable:true});//we cant do
+Object.defineProperty(Cat,'name',{writable:false});//we can do
+
+delete Cat.name;
+
+console.log(Cat.name);
+
+</script>
+</body>
+</html>

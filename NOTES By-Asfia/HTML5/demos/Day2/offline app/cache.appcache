@@ -1,0 +1,11 @@
+
+CACHE MANIFEST 
+FALLBACK
+offline.html
+NETWORK: 
+/checking.cgi 
+CACHE:
+/testappcache.html
+/test.css
+/test.js
+

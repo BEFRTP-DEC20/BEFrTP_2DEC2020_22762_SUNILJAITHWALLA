@@ -1,0 +1,63 @@
+body{
+    background-color:lightblue;
+}
+div{
+     
+    float: right;
+    background: lightblue;
+}
+.div1
+{
+    width: 600px;
+    background: green;
+}
+
+header 
+{
+   
+    padding: 30px;
+    
+    font-size: 35px;
+    color: white;
+}
+section
+{
+    display: flex;
+    
+}
+nav 
+{
+   width: 33%;
+    background:lightblue;
+    padding: 20px;
+}
+article
+{
+   
+    width: 33%;
+    background-color: lightblue;
+    padding: 10px;
+
+}
+.div2
+{
+    align-content: stretch;
+    width: 33%;
+}
+aside
+{
+    height: 250px;
+    width: 30%;
+    background-color: lightblue;
+    color: white;
+    float: right;
+    
+}
+footer 
+{
+    height: 250px;
+    background-color: lightblue;
+    padding: 10px;
+    text-align: left;
+    color: maroon;
+}

@@ -1,0 +1,18 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+@mixin rad($r){
+
+	border: 2px solid red;
+	border-radius: $r;
+	background-color: $primary-color;
+}
+
+body {
+font: 100% $font-stack;
+color: $primary-color;
+}
+#tester {
+font-family:Verdana, Geneva, sans-serif;
+color: $primary-color;
+@include rad(3px);
+}

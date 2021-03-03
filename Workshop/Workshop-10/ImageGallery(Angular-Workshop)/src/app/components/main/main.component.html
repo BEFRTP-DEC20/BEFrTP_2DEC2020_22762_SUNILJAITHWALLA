@@ -1,0 +1,25 @@
+Search Image: <input type="text"  placeholder="search category" [(ngModel)]= 'search'>
+<div>
+    {{parentCount}}
+<app-addimage></app-addimage>
+    <app-child [childCount]= 'parentCount'
+    (increment) = 'getCount($event)'></app-child>
+    <br>
+    {{'John sunil' | convertTospace}}
+    <div>
+       {{today | date: 'long'}}<br>
+        {{70|currency : 'Rs' | lowercase}}
+         <div *ngIf= 'images && images.length' class="row"  >
+        <div class="card text-black  mb-4 col-4 "  *ngFor="let img of images | categoryfilter : search" >
+            
+        <img [src]= 'img.imageSrc'  class="rounded float-left" [alt]= 'img.imageDesc'>
+        <div class="card-body" >
+          <h5 class="card-title">{{img.imageName}}</h5>
+        
+          <p class="card-text">{{img.imageCategory}}</p>
+           <button class="btn btn-primary" (click)= 'toggleImage()'>hide/show</button> 
+           
+          </div>
+      </div>
+      </div></div>
+</div> 

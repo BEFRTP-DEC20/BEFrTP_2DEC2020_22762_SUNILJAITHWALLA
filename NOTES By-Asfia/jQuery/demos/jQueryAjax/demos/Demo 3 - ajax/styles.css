@@ -1,0 +1,12 @@
+body {
+    font-family: Calibri;
+}
+div {
+    margin: 10px;
+}
+span {
+    border: 2px solid purple;
+}
+.error {
+    border: 2px solid red;
+}

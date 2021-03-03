@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>Object Oriented JavaScript</title>
+	</head>
+	<body>
+		<script>
+		function Animal(voice){
+		this.voice=voice|'GRUNT';}
+			
+		
+		Animal.prototype.speak=function(){console.log(this.voice)}
+		function Cat(name,color)
+		{
+		Animal.call(this);
+		this.name=name,
+		 this.color=color
+		 };
+		 
+		 Cat.prototype=Object.create(Animal.prototype);
+		 
+		 var fluffy=new Cat("Fluffy","White");
+		 console.log(fluffy.name);
+		 fluffy.speak();
+		 
+		 
+		<!-- var c1=Object.create(Animal.prototype);//new Cat('Fulffy','White'); if we create by new den speak will not be a part of c1
+		c1.voice="MEOW";
+		c1.speak();
+		var c2=new Cat('Muffin','Grey');
+		c1.speak();//speak is not a memeber of c1 so hasOwnProperty will return false
+		console.log(c1.__proto__);//Cat
+		console.log(c1.__proto__.__proto__);//Object -->
+		
+		</script>
+	</body>
+</html>

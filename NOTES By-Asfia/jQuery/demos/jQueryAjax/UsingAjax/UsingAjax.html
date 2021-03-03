@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <script src="../Scripts/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#MyButton').click(function () {
+                var friend = {
+                    name: $('#FirstNameTB').val(),
+                    age: $('#AgeTB').val()
+                };
+
+                $.ajax({
+                    method: 'POST',
+                    url: 'http://rest.learncode.academy/api/learncode/friends',
+                    data: friend,
+                    success: function (data, status, xhr) {
+                        alert(data.name + " is posted!!!");
+                    },
+                    error: function (xhr, status, error) {
+                        alert('Error occurred: ' + status);
+                    }
+
+                });
+                $.ajax({
+                    method: 'GET',
+                    url: 'http://rest.learncode.academy/api/learncode/friends',
+                    data: friend,
+                    //   dataType: 'json',
+                    success: function (data, status, xhr) {
+                        $('#OutputDiv').append(data);
+                    },
+                    error: function (xhr, status, error) {
+                        alert('Error occurred: ' + status);
+                    }
+
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    Name: <input type="text" id="FirstNameTB" value="John" />
+    <br />
+    Age: <input type="text" id="AgeTB" value="20" />
+    <br />
+    <br />
+    <button id="MyButton">Submit</button>
+    <div id="OutputDiv"></div>
+</body>
+
+</html>
